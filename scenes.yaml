@@ -1,0 +1,36 @@
+- name: Mirror Day
+  entities:
+        light.aeotec_zw121_led_strip_level_6:
+            state: true
+            brightness: 255
+            color_temp: 255
+        light.aeotec_zw121_led_strip_level_7:
+            state: true
+            brightness: 255
+            rgb_color: [150, 190, 255]
+        light.aeotec_zw121_led_strip_level_8:
+            state: true
+            brightness: 255
+            rgb_color: [150, 190, 255]
+- name: Mirror Night
+  entities:
+        light.aeotec_zw121_led_strip_level_6:
+            state: true
+            brightness: 255
+            color_temp: 255
+        light.aeotec_zw121_led_strip_level_7:
+            state: true
+            brightness: 255
+            rgb_color: [255, 214, 150]
+        light.aeotec_zw121_led_strip_level_8:
+            state: true
+            brightness: 255
+            rgb_color: [255, 214, 150]
+- name: Mirror Off
+  entities:
+        light.aeotec_zw121_led_strip_level_6:
+            state: false
+        light.aeotec_zw121_led_strip_level_7:
+            state: false
+        light.aeotec_zw121_led_strip_level_8:
+            state: false

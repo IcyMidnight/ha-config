@@ -1,0 +1,52 @@
+- id: fd610730ce0b42a19ba83210eb1b80d4
+  alias: Update Available Notifications
+  trigger:
+    platform: state
+    entity_id: updater.updater
+  action:
+    service: notify.notify
+    data:
+      message: Update for Home Assistant is available.
+
+- id: '1542616274048'
+  alias: Mirror Follow
+  trigger:
+  - entity_id: switch.homeseer_hsws200_wall_switch_switch_4
+    platform: state
+  action:
+  - service: script.turn_on
+    data:
+      entity_id:
+      - script.mirror_update
+
+- id: '1543219061236'
+  alias: Ambiance Follow
+  trigger:
+  - entity_id: switch.homeseer_hsws200_wall_switch_switch_2
+    platform: state
+  - entity_id: light.aeotec_zw121_led_strip_level_6
+    platform: state
+  action:
+  - service: script.turn_on
+    data:
+      entity_id:
+      - script.mirror_update_ambiance
+
+- id: '1543219061295'
+  alias: Night Light Follow
+  trigger:
+  - entity_id: switch.homeseer_hsws200_wall_switch_switch_3
+    platform: state
+  action:
+  - service: script.turn_on
+    data:
+      entity_id:
+      - script.nightlight_update
+
+- id: '1543222884226'
+  alias: Update OZW
+  trigger:
+    platform: time
+    at: '4:26:13'
+  action:
+  - service: zwave.update_config

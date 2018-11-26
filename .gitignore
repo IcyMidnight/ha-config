@@ -1,3 +1,8 @@
+# Home Assistant Stuff
+secrets.yaml
+OZW_Log.txt
+*.db
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
