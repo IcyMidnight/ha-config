@@ -50,3 +50,14 @@
     at: '4:26:13'
   action:
   - service: zwave.update_config
+
+- id: '1543390183529'
+  alias: Utility Closet
+  trigger:
+  - entity_id: binary_sensor.aeotec_zw112_door_window_sensor_6_sensor_3
+    platform: state
+  action:
+  - service_template: >
+        switch.turn_{{ 'on' if is_state('binary_sensor.aeotec_zw112_door_window_sensor_6_sensor_3', 'off') else 'off' }}
+    data:
+      entity_id: switch.ge_14288_duplex_receptacle_switch
