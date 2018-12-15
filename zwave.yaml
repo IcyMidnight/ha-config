@@ -1,3 +1,3 @@
-usb_path: /dev/ttyUSB0
+usb_path: /share/dev/zwave
 network_key: !secret zwave_network_key
 #config_path: /config/open-zwave/config
