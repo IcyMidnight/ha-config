@@ -74,6 +74,8 @@ script: !include scripts.yaml
 group: !include groups.yaml
 scene: !include scenes.yaml
 
+panel_custom: !include panels.yaml
+
 panel_iframe:
   configurator:
     title: Configurator
