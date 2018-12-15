@@ -51,7 +51,7 @@ mirror_update_ambiance_off:
   sequence:
   - service: light.turn_off
     data:
-      entity_id: group.mirror_ambiance
+      entity_id: light.aeotec_zw121_led_strip_level_7 #group.mirror_ambiance
 #  - service: notify.file
 #    data:
 #      message: "mirror_update_ambiance_off"
@@ -60,7 +60,7 @@ mirror_update_ambiance_on_normal:
   sequence:
   - service: light.turn_on
     data_template:
-      entity_id: group.mirror_ambiance
+      entity_id: light.aeotec_zw121_led_strip_level_7 #group.mirror_ambiance
       brightness: 255
       color_name: >
         {% if is_state('sun.sun', 'below_horizon') %}
@@ -76,7 +76,7 @@ mirror_update_ambiance_on_heater:
   sequence:
   - service: light.turn_on
     data:
-      entity_id: group.mirror_ambiance
+      entity_id: light.aeotec_zw121_led_strip_level_7 #group.mirror_ambiance
       brightness: 255
       color_name: red
 #  - service: notify.file

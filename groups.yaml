@@ -12,7 +12,7 @@ bathroom:
       - switch.homeseer_hsws200_wall_switch_switch_2
       - switch.homeseer_hsws200_wall_switch_switch_3
       - light.aeotec_zw121_led_strip_level_6
-      - group.mirror_ambiance
+      - light.aeotec_zw121_led_strip_level_7
 mirror_ambiance:
     name: Bathroom Ambiance
     entities:
