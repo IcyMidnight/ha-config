@@ -7,7 +7,6 @@
     service: notify.notify
     data:
       message: Update for Home Assistant is available.
-
 - id: '1542616274048'
   alias: Mirror Follow
   trigger:
@@ -18,7 +17,6 @@
     data:
       entity_id:
       - script.mirror_update
-
 - id: '1543219061236'
   alias: Ambiance Follow
   trigger:
@@ -31,7 +29,6 @@
     data:
       entity_id:
       - script.mirror_update_ambiance
-
 - id: '1543219061295'
   alias: Night Light Follow
   trigger:
@@ -42,7 +39,6 @@
     data:
       entity_id:
       - script.nightlight_update
-
 - id: '1543222884226'
   alias: Update OZW
   trigger:
@@ -50,14 +46,25 @@
     at: '4:26:13'
   action:
   - service: zwave.update_config
-
 - id: '1543390183529'
   alias: Utility Closet
   trigger:
-  - entity_id: binary_sensor.aeotec_zw112_door_window_sensor_6_sensor_3
+  - entity_id: binary_sensor.utility_closet_sensor_sensor
     platform: state
   action:
-  - service_template: >
-        switch.turn_{{ 'on' if is_state('binary_sensor.aeotec_zw112_door_window_sensor_6_sensor_3', 'off') else 'off' }}
-    data:
+  - data:
       entity_id: switch.ge_14288_duplex_receptacle_switch
+    service_template: 'switch.turn_{{ ''on'' if is_state(''binary_sensor.utility_closet_sensor_sensor'',
+      ''off'') else ''off'' }}
+
+      '
+- id: '1544126627653'
+  alias: Nightlight Toggle
+  trigger:
+  - entity_id: switch.aeotec_zw130_wallmote_quad_switch_4
+    platform: state
+  condition: []
+  action:
+  - data:
+      entity_id: switch.homeseer_hsws200_wall_switch_switch_3
+    service: switch.toggle
