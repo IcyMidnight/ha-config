@@ -41,6 +41,9 @@ updater:
   # Optional, allows Home Assistant developers to focus on popular components.
   include_used_components: true
 
+# System Health?
+system_health:
+
 # Discover some devices automatically
 discovery:
 
