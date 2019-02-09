@@ -93,3 +93,9 @@ notify:
     platform: file
     filename: notifications.log
     timestamp: True
+
+light:
+  - platform: nanoleaf_aurora
+    name: Bedroom Aurora
+    host: 192.168.4.25
+    token: !secret aurora0_auth_token
