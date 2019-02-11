@@ -4,6 +4,12 @@ living_room:
     entities:
       - light.dining_room
       - switch.utility_closet_outlet
+      - climate.thermostat_living_room
+bedroom:
+    name: Bedroom
+    entities:
+      - light.bedroom_aurora
+      - climate.thermostat_bedroom
 bathroom:
     name: Bathroom
     entities:
