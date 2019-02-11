@@ -58,13 +58,3 @@
       ''off'') else ''off'' }}
 
       '
-- id: '1544126627653'
-  alias: Nightlight Toggle
-  trigger:
-  - entity_id: switch.aeotec_zw130_wallmote_quad_switch_4
-    platform: state
-  condition: []
-  action:
-  - data:
-      entity_id: switch.homeseer_hsws200_wall_switch_switch_3
-    service: switch.toggle
