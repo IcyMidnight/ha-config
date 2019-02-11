@@ -3,7 +3,7 @@ living_room:
     control: hidden  # Don't show a switch to toggle the whole group
     entities:
       - light.dining_room
-      - switch.utility_closet_outlet
+      - switch.outlet_utility_closet
       - climate.thermostat_living_room
 bedroom:
     name: Bedroom
@@ -13,13 +13,13 @@ bedroom:
 bathroom:
     name: Bathroom
     entities:
-      - switch.homeseer_hsws200_wall_switch_switch_4
-      - switch.homeseer_hsws200_wall_switch_switch
-      - switch.homeseer_hsws200_wall_switch_switch_2
-      - switch.homeseer_hsws200_wall_switch_switch_3
-      - light.aeotec_zw121_led_strip_level_6
-      - light.aeotec_zw121_led_strip_level_7
-      - light.aeotec_zw121_led_strip_level_8
+      - switch.bathroom_wall
+      - switch.bathroom_fan
+      - switch.bathroom_heater
+      - switch.bathroom_nightlight
+      - light.bathroom_mirror_inside_inner
+      - light.bathroom_mirror_outside_right
+      - light.bathroom_mirror_outside_left
 daily_forecast:
     name: Daily Forecast
     entities:

@@ -10,7 +10,7 @@
 - id: '1542616274048'
   alias: Mirror Follow
   trigger:
-  - entity_id: switch.homeseer_hsws200_wall_switch_switch_4
+  - entity_id: switch.bathroom_wall
     platform: state
   action:
   - service: script.turn_on
@@ -20,9 +20,9 @@
 - id: '1543219061236'
   alias: Ambiance Follow
   trigger:
-  - entity_id: switch.homeseer_hsws200_wall_switch_switch_2
+  - entity_id: switch.bathroom_heater
     platform: state
-  - entity_id: light.aeotec_zw121_led_strip_level_6
+  - entity_id: light.bathroom_mirror_inside_inner
     platform: state
   action:
   - service: script.turn_on
@@ -32,7 +32,7 @@
 - id: '1543219061295'
   alias: Night Light Follow
   trigger:
-  - entity_id: switch.homeseer_hsws200_wall_switch_switch_3
+  - entity_id: switch.bathroom_nightlight
     platform: state
   action:
   - service: script.turn_on
@@ -49,12 +49,12 @@
 - id: '1543390183529'
   alias: Utility Closet
   trigger:
-  - entity_id: binary_sensor.utility_closet_door
+  - entity_id: binary_sensor.door_utility_closet
     platform: state
   action:
   - data:
-      entity_id: switch.utility_closet_outlet
-    service_template: 'switch.turn_{{ ''on'' if is_state(''binary_sensor.utility_closet_door'',
+      entity_id: switch.outlet_utility_closet
+    service_template: 'switch.turn_{{ ''on'' if is_state(''binary_sensor.door_utility_closet'',
       ''off'') else ''off'' }}
 
       '
