@@ -49,12 +49,12 @@
 - id: '1543390183529'
   alias: Utility Closet
   trigger:
-  - entity_id: binary_sensor.utility_closet_sensor_sensor
+  - entity_id: binary_sensor.utility_closet_door
     platform: state
   action:
   - data:
-      entity_id: switch.ge_14288_duplex_receptacle_switch
-    service_template: 'switch.turn_{{ ''on'' if is_state(''binary_sensor.utility_closet_sensor_sensor'',
+      entity_id: switch.utility_closet_outlet
+    service_template: 'switch.turn_{{ ''on'' if is_state(''binary_sensor.utility_closet_door'',
       ''off'') else ''off'' }}
 
       '
