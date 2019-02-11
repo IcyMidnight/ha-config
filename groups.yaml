@@ -2,8 +2,8 @@ living_room:
     name: Living Room
     control: hidden  # Don't show a switch to toggle the whole group
     entities:
-      - light.leviton_unknown_type0e01_id0334_level
-      - switch.ge_14288_duplex_receptacle_switch
+      - light.dining_room
+      - switch.utility_closet_outlet
 bathroom:
     name: Bathroom
     entities:
