@@ -19,10 +19,6 @@ bathroom:
       - switch.homeseer_hsws200_wall_switch_switch_3
       - light.aeotec_zw121_led_strip_level_6
       - light.aeotec_zw121_led_strip_level_7
-mirror_ambiance:
-    name: Bathroom Ambiance
-    entities:
-      - light.aeotec_zw121_led_strip_level_7
       - light.aeotec_zw121_led_strip_level_8
 daily_forecast:
     name: Daily Forecast
