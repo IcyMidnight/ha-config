@@ -17,7 +17,7 @@
     - dewpointTemperature
 - platform: wunderground
   api_key: !secret wunderground_api_key
-  pws_id: !secret wunderground_station_id
+  station_id: !secret wunderground_station_id
   monitored_conditions:
     - weather_1d_metric
     - weather_1n_metric
