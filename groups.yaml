@@ -3,7 +3,6 @@ living_room:
     control: hidden  # Don't show a switch to toggle the whole group
     entities:
       - light.dining_room
-      - switch.outlet_utility_closet
       - climate.thermostat_living_room
 bedroom:
     name: Bedroom
@@ -21,6 +20,10 @@ bathroom:
       - light.bathroom_mirror_inside_inner
       - light.bathroom_mirror_outside_right
       - light.bathroom_mirror_outside_left
+entryway:
+    name: Entryway
+    entities:
+      - switch.outlet_utility_closet
 daily_forecast:
     name: Daily Forecast
     entities:
