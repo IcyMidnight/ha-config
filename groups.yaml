@@ -10,6 +10,7 @@ bedroom:
     entities:
       - light.bedroom_aurora
       - climate.thermostat_bedroom
+      - switch.bedroom_speakers
 bathroom:
     name: Bathroom
     entities:
