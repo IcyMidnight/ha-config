@@ -44,6 +44,14 @@ updater:
 # System Health?
 system_health:
 
+# MQTT
+mqtt:
+  broker: 192.168.4.10
+  port: 1883
+  username: hass
+  password: !secret mqtt_password
+  protocol: 3.1.1
+
 # Discover some devices automatically
 discovery:
 
