@@ -96,6 +96,10 @@ notify:
 
 light:
   - platform: nanoleaf_aurora
-    name: Bedroom Aurora
+    name: Bedroom Bed Aurora
     host: 192.168.4.25
     token: !secret aurora0_auth_token
+  - platform: nanoleaf_aurora
+    name: Bedroom Cabinets Aurora
+    host: 192.168.4.26
+    token: !secret aurora1_auth_token

@@ -7,7 +7,8 @@ living_room:
 bedroom:
     name: Bedroom
     entities:
-      - light.bedroom_aurora
+      - light.bedroom_bed_aurora
+      - light.bedroom_cabinets_aurora
       - climate.thermostat_bedroom
       - switch.bedroom_speakers
 bathroom:
