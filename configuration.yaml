@@ -77,8 +77,8 @@ sensor: !include sensors.yaml
 tts:
   - platform: google
 
-# Cloud
-cloud:
+# Nabucasa? Costs money?
+#cloud:
 
 automation: !include automations.yaml
 script: !include scripts.yaml
