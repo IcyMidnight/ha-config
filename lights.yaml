@@ -1,0 +1,36 @@
+- platform: nanoleaf
+  name: Bedroom Bed Aurora
+  host: 192.168.4.25
+  token: !secret aurora0_auth_token
+- platform: nanoleaf
+  name: Bedroom Cabinets Aurora
+  host: 192.168.4.26
+  token: !secret aurora1_auth_token
+
+- platform: switch
+  name: Bathroom Wall
+  entity_id: switch.bathroom_wall
+- platform: switch
+  name: Bathroom Fan
+  entity_id: switch.bathroom_fan
+- platform: switch
+  name: Bathroom Heater
+  entity_id: switch.bathroom_heater
+- platform: switch
+  name: Bathroom Nightlight
+  entity_id: switch.bathroom_nightlight
+
+- platform: switch
+  name: Media Lamp
+  entity_id: switch.media_lamp
+- platform: switch
+  name: Couch Lamp
+  entity_id: switch.couch_lamp
+
+- platform: switch
+  name: Utility Closet
+  entity_id: switch.outlet_utility_closet
+
+- platform: mqtt
+  name: Fake Light
+  command_topic: "/light/fake/set"

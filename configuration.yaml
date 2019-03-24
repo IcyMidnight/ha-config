@@ -84,6 +84,7 @@ automation: !include automations.yaml
 script: !include scripts.yaml
 group: !include groups.yaml
 scene: !include scenes.yaml
+light: !include lights.yaml
 
 panel_custom: !include panels.yaml
 
@@ -101,13 +102,3 @@ notify:
     platform: file
     filename: notifications.log
     timestamp: True
-
-light:
-  - platform: nanoleaf_aurora
-    name: Bedroom Bed Aurora
-    host: 192.168.4.25
-    token: !secret aurora0_auth_token
-  - platform: nanoleaf_aurora
-    name: Bedroom Cabinets Aurora
-    host: 192.168.4.26
-    token: !secret aurora1_auth_token

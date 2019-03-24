@@ -1,9 +1,13 @@
 living_room:
     name: Living Room
-    control: hidden  # Don't show a switch to toggle the whole group
+    entities:
+      - light.media_lamp
+      - light.couch_lamp
+      - climate.thermostat_living_room
+dining_room:
+    name: Dining Room
     entities:
       - light.dining_room
-      - climate.thermostat_living_room
 bedroom:
     name: Bedroom
     entities:
@@ -14,17 +18,17 @@ bedroom:
 bathroom:
     name: Bathroom
     entities:
-      - switch.bathroom_wall
-      - switch.bathroom_fan
-      - switch.bathroom_heater
-      - switch.bathroom_nightlight
+      - light.bathroom_wall
+      - light.bathroom_fan
+      - light.bathroom_heater
+      - light.bathroom_nightlight
       - light.bathroom_mirror_inside_inner
       - light.bathroom_mirror_outside_right
       - light.bathroom_mirror_outside_left
 entryway:
     name: Entryway
     entities:
-      - switch.outlet_utility_closet
+      - light.utility_closet
 daily_forecast:
     name: Daily Forecast
     entities:
