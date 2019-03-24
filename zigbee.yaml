@@ -1,2 +1,5 @@
-usb_path: /share/dev/zigbee
+# Warning: apparently this file is read in once by Home Assistant to bootstrap
+# stuff in .storage and then ignored forevermore... unless you delete the
+# corresponding .storage entries.
+usb_path: /dev/zigbee
 database_path: /config/zigbee.db

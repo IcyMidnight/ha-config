@@ -1,3 +1,6 @@
-usb_path: /share/dev/zwave
+# Warning: apparently this file is read in once by Home Assistant to bootstrap
+# stuff in .storage and then ignored forevermore... unless you delete the
+# corresponding .storage entries.
+usb_path: /dev/zwave
 network_key: !secret zwave_network_key
-#config_path: /config/open-zwave/config
+
