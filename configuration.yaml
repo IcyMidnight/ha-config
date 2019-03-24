@@ -85,6 +85,7 @@ script: !include scripts.yaml
 group: !include groups.yaml
 scene: !include scenes.yaml
 light: !include lights.yaml
+input_boolean: !include input_booleans.yaml
 
 panel_custom: !include panels.yaml
 

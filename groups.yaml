@@ -1,3 +1,8 @@
+house:
+    name: House
+    control: hidden
+    entities:
+      - input_boolean.house_guest
 living_room:
     name: Living Room
     entities:
