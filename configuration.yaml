@@ -52,6 +52,16 @@ mqtt:
   password: !secret mqtt_password
   protocol: 3.1.1
 
+influxdb:
+  host: 192.168.4.10
+  port: 8086
+  database: home_assistant
+  username: admin
+  password: !secret influxdb_password
+  exclude:
+    domains:
+      - group
+
 # Discover some devices automatically
 discovery:
 
