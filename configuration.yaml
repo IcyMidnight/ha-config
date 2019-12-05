@@ -58,6 +58,7 @@ influxdb:
   database: home_assistant
   username: admin
   password: !secret influxdb_password
+  max_retries: 16
   exclude:
     domains:
       - group
