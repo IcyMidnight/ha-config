@@ -69,6 +69,10 @@ discovery:
 # Allows you to issue voice commands from the frontend in enabled browsers
 conversation:
 
+# Setup recorder config
+recorder:
+  purge_keep_days: 30
+
 # Enables support for tracking state changes over time
 history:
 
