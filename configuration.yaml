@@ -32,6 +32,8 @@ http:
   # Uncomment this to listen (only) on IPv6
   # server_host: "::0"
 
+mobile_app:
+
 # Checks for available updates
 # Note: This component will send some information about your system to
 # the developers to assist with development of Home Assistant.
