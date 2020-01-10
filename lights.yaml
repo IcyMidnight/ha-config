@@ -50,6 +50,11 @@
 - platform: switch
   name: Couch Lamp
   entity_id: switch.couch_lamp
+- platform: group
+  name: Living Room Lamps
+  entities:
+    - light.media_lamp
+    - light.couch_lamp
 
 - platform: mqtt
   name: Fake Light
